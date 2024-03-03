@@ -1,7 +1,6 @@
 {
   "name": "my-rest-api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "devStart": "nodemon app.js"
@@ -23,5 +22,6 @@
   "devDependencies": {
     "dotenv": "^16.4.5",
     "nodemon": "^3.1.0"
-  }
+  },
+  "description": ""
 }
