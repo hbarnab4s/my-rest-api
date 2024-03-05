@@ -18,5 +18,9 @@ mongoose.connect(process.env.DATABASE_URL)
 ).catch((error) => {
     console.log(error)
 })
-const db = mongoose.connection
+//const db = mongoose.connection
 
+app.use(express.json())
+
+const clientsRouter = require('./routes/clients')
+app.use('/clients', clientsRouter)
